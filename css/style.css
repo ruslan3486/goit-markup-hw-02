@@ -2,14 +2,20 @@
     --main-font: "Roboto", sans-serif;
      --secondary-font: "Raleway", sans-serif;
      --accent-color: #2196F3;
-     
+      --color-text-white: #FFFFFF;
+      --primaru-text-color:#212121;
+      --title-text-color:#757575;
+      
  }     
 body {
     font-family: var(--main-font);
+  background-color: var(--color-text-white);
+    color: var(--primaru-text-color);
 }  
 
 .link {
     text-decoration: none;
+    color: var(--primaru-text-color);
     
 }
 .list {
@@ -17,16 +23,29 @@ body {
 }
 .address {
     font-style: normal;
-}   
+    
+}  
+.link-name{
+    text-decoration: none;
+    color: var(--color-text-white);
+}
    .web-navigation{
        font-family: var(--secondary-font);
        font-weight: 700;
        font-size: 26px;
        line-height: 1.19;
        letter-spacing: 0.03em;
-       /* color: #2196F3;*/
-    }   
-       
+        
+    }  
+   .Web-color  {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    }
+
      
    .navigation-link {
       
@@ -34,23 +53,34 @@ body {
        font-size: 14px;
        line-height: 1.14;
        letter-spacing: 0.02em;
+        color: var(--primaru-text-color);
+       
     }  
     
     .navigation-link:hover,
     .navigation-link:focus {
      color: var(--accent-color);
+
     }
-    .contacts-mail{
+    
+  
       
+    
+    
+    .contacts-mail{
+        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        /*color: #757575;*/
+        color: var(--title-text-color)
     }
     .contacts-mail:hover,
     .contacts-mail:focus{
-        color: #2196F3;
+        color: var(--accent-color);
+    }
+    .effective{
+        background: #2F303A;
     }
     .effective-solution{
        
@@ -60,19 +90,20 @@ body {
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-       /* color: #FFFFFF;*/
+        color: var(--color-text-white);
      }
      .service-btn {
-        
+
+        font-family: inherit;
          font-weight: 700;
          font-size: 16px;
          line-height: 1.87;
-         display: flex;
+         
          align-items: center;
          text-align: center;
          letter-spacing: 0.06em;
          background: var(--accent-color);
-         color: #FFFFFF;
+         color: var(--color-text-white);
      }
          .Features-title{
              font-weight: 700;
@@ -80,7 +111,8 @@ body {
              line-height: 1.14;
              letter-spacing: 0.03em;
              text-transform: uppercase;
-             color: #212121;
+              color: var(--primaru-text-color);
+             
              
            }   
            .Features-title-text{
@@ -88,18 +120,23 @@ body {
                font-size: 14px;
                line-height: 1.7;
                letter-spacing: 0.03em;
-                color: #757575;
+               color: var(--title-text-color)
                
             }
        .about-title{
-           font-weight: bold;
+           font-weight: 700;
            font-size: 36px;
            line-height: 1.17;
            text-align: center;
            letter-spacing: 0.03em;
-           color: #212121;
-       }    
+            color: var(--primaru-text-color);
            
+       }    
+/* фон наша команда*/
+           .photo{
+               
+            background: #F5F4FA;
+           }
            
        
        .photo-title{
@@ -108,10 +145,12 @@ body {
            line-height: 1.17;
            text-align: center;
            letter-spacing: 0.03em;
-           color: #212121;
+           
            
           }   
-
+          .contacts-name {
+              background: #2F303A;
+          }
            
      
        .photo-title-name {
@@ -120,7 +159,8 @@ body {
            line-height: 1.19;
            text-align: center;
            letter-spacing: 0.03em;
-           color: #212121;
+            color: var(--primaru-text-color);
+          
            
         }
         .photo-title-profession{
@@ -129,15 +169,16 @@ body {
             line-height: 1.19;
             text-align: center;
             letter-spacing: 0.03em;
-            color: #757575;
+           color: var(--title-text-color)
             
         }   
         .web-logo{
-            font-family: var(--secondary-font);
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 31px;
-            letter-spacing: 0.03em;
+              font-family: var(--secondary-font);
+              font-weight: 700;
+              font-size: 26px;
+              line-height: 1.19;
+              letter-spacing: 0.03em;
+            color: var(--color-text-white);
         }
        
            
@@ -148,6 +189,8 @@ body {
             font-size: 14px;
             line-height: 24px;
             letter-spacing: 0.03em;
+            color: var(--color-text-white);
+           
             
 
             /*color: #FFFFFF;*/
@@ -157,30 +200,40 @@ body {
            .contact-list-link:focus{
              color: var(--accent-color);  
            }
+          
 
         
         /*portfolio*/
         .list-btn-link {
+            font-family: inherit;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.62;
             text-align: center;
             letter-spacing: 0.03em;
-            color: #212121; 
+             color: var(--primaru-text-color);
             
+          }
+         
            
-        }
+        
           .list-btn-link:hover,
           .list-btn-link:focus {
         background-color: var(--accent-color);
-        color: #FFFFFF;
+        color: var(--color-text-white);
           }
+           /*Кнопка подсвечивания портфолио*/
+           .navigation-link-portfolio:visited {
+               color: var(--accent-color);
+           }
+
           .list-imeges-name{
              font-weight: 700;
               font-size: 18px;
               line-height: 2;
               letter-spacing: 0.06em;
-              color: #212121;
+               color: var(--primaru-text-color);
+              
               
             }   
            .list-imeges-btn{
@@ -188,9 +241,10 @@ body {
                font-size: 16px;
                line-height: 1.87;
                letter-spacing: 0.03em;
-               color: #757575;
+               color: var(--title-text-color)
                } 
-                
+               
+               
 
                
               
