@@ -1,12 +1,13 @@
-:root {
-    --main-font: "Roboto", sans-serif;
+:root{ 
+     --main-font: "Roboto", sans-serif;
      --secondary-font: "Raleway", sans-serif;
      --accent-color: #2196F3;
       --color-text-white: #FFFFFF;
       --primaru-text-color:#212121;
       --title-text-color:#757575;
+   }
       
- }     
+      
 body {
     font-family: var(--main-font);
   background-color: var(--color-text-white);
@@ -27,7 +28,7 @@ body {
 }  
 .link-name{
     text-decoration: none;
-    color: var(--color-text-white);
+    color: rgba(255, 255, 255, 0.6);
 }
    .web-navigation{
        font-family: var(--secondary-font);
@@ -35,8 +36,13 @@ body {
        font-size: 26px;
        line-height: 1.19;
        letter-spacing: 0.03em;
-        
     }  
+    /*Подсвечивание страницы*/  
+    .navigation-list .navigation-link.navigation-link-nav {
+         color: var(--accent-color);
+    }
+    
+     
    .Web-color  {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -46,8 +52,7 @@ body {
     color: var(--accent-color);
     }
 
-     
-   .navigation-link {
+     .navigation-link {
       
        font-weight: 500;
        font-size: 14px;
@@ -56,18 +61,15 @@ body {
         color: var(--primaru-text-color);
        
     }  
+   
     
     .navigation-link:hover,
     .navigation-link:focus {
      color: var(--accent-color);
-
     }
     
-  
-      
     
-    
-    .contacts-mail{
+  .contacts-mail{
         text-decoration: none;
         font-weight: 500;
         font-size: 14px;
@@ -182,67 +184,89 @@ body {
         }
        
            
-        }
+        
 
            .contact-list-link{
             font-weight: 400;
             font-size: 14px;
-            line-height: 24px;
+            line-height: 1.7;
             letter-spacing: 0.03em;
-            color: var(--color-text-white);
-           
-            
+           }
+           .contact-list-address{
+               font-weight:400;
+               font-size: 14px;
+               line-height: 24px;
+              letter-spacing: 0.03em;
+                color: #FFFFFF;
+            }
 
+              
             /*color: #FFFFFF;*/
-        } 
+           
+             
         
            .contact-list-link:hover,
            .contact-list-link:focus{
              color: var(--accent-color);  
            }
-          
 
-        
-        /*portfolio*/
-        .list-btn-link {
+            /*portfolio*/
+       
+            .button{
+            background: #F5F4FA;
+            font-family: var(--main-font);
+            color: var(--primaru-text-color);
+            }
+        }
+        .list-primary {
             font-family: inherit;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.62;
             text-align: center;
             letter-spacing: 0.03em;
-             color: var(--primaru-text-color);
+             border-radius: 4px; 
+             }   
             
-          }
-         
-           
-        
-          .list-btn-link:hover,
-          .list-btn-link:focus {
+             .list-primary:hover,
+          .list-primary:focus {
         background-color: var(--accent-color);
         color: var(--color-text-white);
           }
            /*Кнопка подсвечивания портфолио*/
-           .navigation-link-portfolio:visited {
-               color: var(--accent-color);
+           
            }
-
-          .list-imeges-name{
+           .list-imeges-name{
              font-weight: 700;
               font-size: 18px;
               line-height: 2;
               letter-spacing: 0.06em;
                color: var(--primaru-text-color);
-              
-              
-            }   
-           .list-imeges-btn{
+              } 
+        
+             .list-imeges-btn{
                font-weight: 400;
                font-size: 16px;
                line-height: 1.87;
                letter-spacing: 0.03em;
                color: var(--title-text-color)
                } 
+         
+        
+          
+           
+         
+           
+       
+
+          
+              
+              
+           
+      
+    
+    
+    
                
                
 
